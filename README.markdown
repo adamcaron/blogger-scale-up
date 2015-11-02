@@ -1,29 +1,12 @@
-# Blogger Advanced
+# Scaling a Rails Application
 
-This is a sample project for use with the tutorials at http://tutorials.jumpstartlab.com
+https://github.com/turingschool/lesson_plans/blob/master/ruby_04-apis_and_scalability/load_testing_and_production_performance_monitoring.markdown#metrics-service
 
-Please do _not_ take it as a set of best practices. In fact, there are many intentional inefficiencies or points of ugliness setup for "fixing" through [tutorial exercises](http://tutorials.jumpstartlab.com/projects/ruby.html).
+The purpose of this application is to simulate additional load against an application.
 
 
-## Getting Started
-
-```bash
-git clone git://github.com/JumpstartLab/blogger_advanced.git
-cd blogger_advanced
-bundle
-rake db:migrate
-rails server
-```
-
-## Branches
-
-There are some branches to show some functionality.
-
-* bootstrap: it's the updated Blogger. It will probably be merged into master soon.
-* api: shows a single responsibility API controller for the articles.
-* secure_api_with_basic_auth: implements basic authentication for the API articles controller.
-* secure_api_with_http_token: implements http token authentication for the API articles controller.
-
-## Contribute
-
-If you find something that is outdated or doesn't work, feel free to submit a pull request. All contributions are greatly appreciated.
+## Goals:
+ - Understand the reasons for load testing Rails applications
+ - Practice writing scripts to simulate load against an application
+ - Understand the differences between elapsed time from the perspective of your application's code as well as from the perspective of the client
+ - Understand the concepts of request queueing and server overload
